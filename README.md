@@ -164,10 +164,7 @@ where altura_m > 2.1
 24. Quais são as diferentes tipos de cores dos pokémons? Apresente os resultados de maneira crescente pelo nome da cor.
 
 ```sql
-select cor
-from pokemon
-group by cor 
-order by cor
+select distinct cor from pokemon order by cor;
 ;
 ```
 
@@ -297,11 +294,7 @@ order by nome
 37. Quais são os diferentes tipos de `peso_kg` dos pokémons? Apresente os resultados ordenados de maneira crescente.
 
 ```sql
-select peso_kg
-from pokemon
-group by peso_kg
-order by peso_kg
-;
+select distinct peso_kg from pokemon order by peso_kg;
 ```
 
 38. Selecione o `numero`, `nome` e `hp` dos pokémons com valores entre 0 e 100. Ordene os resultados de maneira crescente por `hp` e `nome`.
